@@ -1,0 +1,20 @@
+html
+ head
+  include partials/includeHead.jade
+ body
+  include partials/includeMenu.jade
+  br
+  .jumbotron
+   p.help-block.text-left
+      medium #{person}, Here you are in the city of #{cityName} : 
+      img.img-circle(src='/images/#{cityName}.jpg', alt='city image', width='50', height='50')
+      small  : x#{tagline}
+      img.img-responsive(src='/images/#{cityName}.jpg', alt='city image', width='304', height='236')
+   
+   h3 #{tagline}
+   h3 #{cityName} is famous for
+   ul
+        for famous in FAMOUSFOR
+            li= famous
+
+   
