@@ -18,6 +18,7 @@ app.set('view engine', 'jade');
 
 app.get('/', routes.loginPageHandler);
 app.get('/toLanding', routes.landingPageHandler);
+app.get('/toLogout', routes.logoutPageHandler);
 app.post('/toCity', routes.cityPageHandler);
 
 var port = process.env.PORT || 3000;

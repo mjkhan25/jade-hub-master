@@ -50,3 +50,8 @@ exports.cityPageHandler = function(req, res){
 						FAMOUSFOR:famousfor
 					});
 }
+
+// use extra logout button in app
+exports.logoutPageHandler = function(req, res){
+	res.render('login.jade', {});
+}

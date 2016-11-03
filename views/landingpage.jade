@@ -4,13 +4,16 @@ html
  body
   include partials/includeMenu.jade
   .jumbotron
-   h1 Welcome to the Transport Hub
-   h2= '  Hi ' + welcomeMessage
-   p Depending on your interest, I'll take you to a city 
-  form(action="/toCity", method="post")
-   select.form-control.input-sm(required='', name='interest')
+   .container
+     h1 Welcome to the Transport Hub
+     h2= '  Hi ' + welcomeMessage
+     p Depending on your interest, I'll take you to a city 
+  .container
+   form(action="/toCity", method="post")
+    select.form-control.input-sm(required='', name='interest')
       option(value="finance") Business
       option(value='fashion') Fashion
       option(value='history') History
-   input(type="submit", value="Submit")
+    br
+    input(type="submit", value="Submit")
   
